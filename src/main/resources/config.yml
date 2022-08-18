@@ -1,0 +1,52 @@
+# All times are in seconds.
+
+# -=GAME TIMES=-
+# Min players to start game.
+min-players: 2
+# When you have min players, start after this amount of time.
+then-start-after-seconds: 30
+# No pvp for this amount of time.
+no-pvp-for: 120
+# Then the game ends after this amount of time.
+then-game-lasts: 600
+
+# -=MAP GENERATION=-
+# Padding is the spacing between map and surrounding void. Decrease = better performance, less void.
+padding: 15
+# Initial world generation. Increase if you get giant red blocks of crash debug, decrease for faster world generation.
+world-generation-delay: 40
+# Max number of millis spent on generating the maps. Should be at most 50. Decrease = better performance, slower generation.
+max-millis-per-tick-generating: 4
+# Enable water? Water can be annoying, but also can be fun for strategy.
+enable-water: true
+# Max build height (no higher than: 255), cannot go above this point.
+max-build-height: 255
+# Should we replace andisite, diorite, granite with useful ores?
+extra-ore: true
+
+
+# -=MAP SETTINGS=-
+# We can generate maps while the players are playing. How many maps should we pre-generate?
+# Set to 0 to never generate maps while players are playing. This means larger wait times in lobby, but better gameplay.
+max-pregenerated-chunks-per-type: 1
+# Length of small maps.
+size-of-small-maps: 200
+# Length of medium maps.
+size-of-medium-maps: 400
+# Minimum number of players needed to trigger medium maps.
+min-players-for-medium: 40
+# Length of large maps
+size-of-large-maps: 800
+# Minimum number of players needed to trigger large maps.
+min-players-for-large: 60
+
+# Commands to disable while in game...
+disable-commands:
+  - "/whisper"
+  - "/w"
+  - "/msg"
+  - "/r"
+  - "/tell"
+  - "/message"
+  - "/reply"
+  - "/pm"
